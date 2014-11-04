@@ -14,7 +14,7 @@
     <% @videos.each do |video| %>
       <tr>
         <td><%= video.name %></td>
-        <td><%= image_tag @video.photo.url(:thumb) %></td>
+        <td><%= image_tag video.photo.url(:thumb) %></td>
         <td><%= video.url %></td>
         <td><%= link_to 'Show', video %></td>
         <td><%= link_to 'Edit', edit_video_path(video) %></td>
